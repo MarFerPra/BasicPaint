@@ -10,5 +10,5 @@ package BasicPaint;
  * @author lucypher
  */
 public enum Herramientas {
-    Lapiz, Linea, Circulo, Cuadrado 
+    Lapiz, Linea, Circulo, Cuadrado
 }

@@ -13,7 +13,7 @@ import java.awt.Color;
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 
-    
+
     /**
      * Creates new form VentanaPrincipal
      */
@@ -29,7 +29,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
         GrupoBotonesSuperior = new javax.swing.ButtonGroup();
         displayHerramienta = new javax.swing.JLabel();
         PanelCentral = new javax.swing.JPanel();
@@ -57,21 +56,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         MenuEdicion = new javax.swing.JMenu();
         BarraEstadoCheckbox = new javax.swing.JCheckBoxMenuItem();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("PaintBasico");
-
         displayHerramienta.setText("Herramienta seleccionada");
         getContentPane().add(displayHerramienta, java.awt.BorderLayout.PAGE_END);
-
         PanelCentral.setLayout(new java.awt.BorderLayout());
-
         PanelSuperior.setPreferredSize(new java.awt.Dimension(436, 35));
         PanelSuperior.setLayout(null);
-
         BarraHerramientas.setBorder(null);
         BarraHerramientas.setRollover(true);
-
         GrupoBotonesSuperior.add(BotonLapiz);
         BotonLapiz.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BasicPaint/Lapiz.gif"))); // NOI18N
         BotonLapiz.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -80,7 +73,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
         BarraHerramientas.add(BotonLapiz);
-
         GrupoBotonesSuperior.add(BotonLinea);
         BotonLinea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BasicPaint/Linea.gif"))); // NOI18N
         BotonLinea.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -89,7 +81,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
         BarraHerramientas.add(BotonLinea);
-
         GrupoBotonesSuperior.add(BotonCuadrado);
         BotonCuadrado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BasicPaint/Rectangulo.gif"))); // NOI18N
         BotonCuadrado.addActionListener(new java.awt.event.ActionListener() {
@@ -98,7 +89,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
         BarraHerramientas.add(BotonCuadrado);
-
         GrupoBotonesSuperior.add(BotonCirculo);
         BotonCirculo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BasicPaint/Ovalo.gif"))); // NOI18N
         BotonCirculo.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -107,20 +97,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
         BarraHerramientas.add(BotonCirculo);
-
         PanelSuperior.add(BarraHerramientas);
         BarraHerramientas.setBounds(0, 0, 240, 40);
-
         PanelCentral.add(PanelSuperior, java.awt.BorderLayout.PAGE_START);
-
         PanelInferior.setPreferredSize(new java.awt.Dimension(436, 25));
         PanelInferior.setLayout(new java.awt.BorderLayout());
-
         PanelBotones.setPreferredSize(new java.awt.Dimension(150, 50));
         PanelBotones.setRequestFocusEnabled(false);
         PanelBotones.setVerifyInputWhenFocusTarget(false);
         PanelBotones.setLayout(null);
-
         BotonNegro.setBackground(new java.awt.Color(1, 1, 1));
         BotonNegro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +114,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         PanelBotones.add(BotonNegro);
         BotonNegro.setBounds(0, 0, 19, 19);
-
         BotonRojo.setBackground(new java.awt.Color(255, 3, 0));
         BotonRojo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,7 +122,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         PanelBotones.add(BotonRojo);
         BotonRojo.setBounds(20, 0, 19, 19);
-
         BotonAzul.setBackground(new java.awt.Color(0, 32, 255));
         BotonAzul.setForeground(new java.awt.Color(16, 0, 234));
         BotonAzul.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +131,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         PanelBotones.add(BotonAzul);
         BotonAzul.setBounds(40, 0, 19, 19);
-
         BotonVerde.setBackground(new java.awt.Color(0, 255, 0));
         BotonVerde.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,7 +139,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         PanelBotones.add(BotonVerde);
         BotonVerde.setBounds(60, 0, 19, 19);
-
         BotonAmarillo.setBackground(new java.awt.Color(255, 239, 0));
         BotonAmarillo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -166,7 +147,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         PanelBotones.add(BotonAmarillo);
         BotonAmarillo.setBounds(80, 0, 19, 19);
-
         BotonBlanco.setBackground(new java.awt.Color(254, 254, 254));
         BotonBlanco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,9 +155,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         PanelBotones.add(BotonBlanco);
         BotonBlanco.setBounds(100, 0, 19, 19);
-
         PanelInferior.add(PanelBotones, java.awt.BorderLayout.LINE_START);
-
         CheckBoxRelleno.setText("Relleno");
         CheckBoxRelleno.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -194,29 +172,24 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 CheckBoxRellenoActionPerformed(evt);
             }
         });
-
         javax.swing.GroupLayout PanelRellenoLayout = new javax.swing.GroupLayout(PanelRelleno);
         PanelRelleno.setLayout(PanelRellenoLayout);
         PanelRellenoLayout.setHorizontalGroup(
             PanelRellenoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelRellenoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(CheckBoxRelleno)
-                .addContainerGap())
+                      .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                      .addComponent(CheckBoxRelleno)
+                      .addContainerGap())
         );
         PanelRellenoLayout.setVerticalGroup(
             PanelRellenoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelRellenoLayout.createSequentialGroup()
-                .addGap(0, 3, Short.MAX_VALUE)
-                .addComponent(CheckBoxRelleno))
+                      .addGap(0, 3, Short.MAX_VALUE)
+                      .addComponent(CheckBoxRelleno))
         );
-
         PanelInferior.add(PanelRelleno, java.awt.BorderLayout.LINE_END);
-
         PanelCentral.add(PanelInferior, java.awt.BorderLayout.PAGE_END);
-
         lienzo.setBackground(new java.awt.Color(254, 254, 254));
-
         javax.swing.GroupLayout lienzoLayout = new javax.swing.GroupLayout(lienzo);
         lienzo.setLayout(lienzoLayout);
         lienzoLayout.setHorizontalGroup(
@@ -227,13 +200,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             lienzoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 271, Short.MAX_VALUE)
         );
-
         PanelCentral.add(lienzo, java.awt.BorderLayout.CENTER);
-
         getContentPane().add(PanelCentral, java.awt.BorderLayout.CENTER);
-
         MenuArchivo.setText("Archivo");
-
         MenuItemNuevo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.ALT_MASK));
         MenuItemNuevo.setText("Nuevo");
         MenuItemNuevo.addActionListener(new java.awt.event.ActionListener() {
@@ -242,7 +211,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
         MenuArchivo.add(MenuItemNuevo);
-
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK));
         jMenuItem1.setText("Abrir");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
@@ -251,15 +219,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
         MenuArchivo.add(jMenuItem1);
-
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.ALT_MASK));
         jMenuItem2.setText("Guardar");
         MenuArchivo.add(jMenuItem2);
-
         Menu.add(MenuArchivo);
-
         MenuEdicion.setText("Edicion");
-
         BarraEstadoCheckbox.setSelected(true);
         BarraEstadoCheckbox.setText("Ver barra de estado");
         BarraEstadoCheckbox.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -273,11 +237,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
         MenuEdicion.add(BarraEstadoCheckbox);
-
         Menu.add(MenuEdicion);
-
         setJMenuBar(Menu);
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -286,16 +247,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void BarraEstadoCheckboxItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_BarraEstadoCheckboxItemStateChanged
-        if(BarraEstadoCheckbox.getState()==true){
-        displayHerramienta.setVisible(true);
-    }
-    if(BarraEstadoCheckbox.getState()==false){
-        displayHerramienta.setVisible(false);
-    }
+        if(BarraEstadoCheckbox.getState()==true) {
+            displayHerramienta.setVisible(true);
+        }
+        if(BarraEstadoCheckbox.getState()==false) {
+            displayHerramienta.setVisible(false);
+        }
     }//GEN-LAST:event_BarraEstadoCheckboxItemStateChanged
 
     private void BarraEstadoCheckboxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BarraEstadoCheckboxMouseClicked
-    
     }//GEN-LAST:event_BarraEstadoCheckboxMouseClicked
 
     private void BotonLapizFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_BotonLapizFocusGained
@@ -309,13 +269,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonLineaFocusGained
 
     private void BotonCirculoFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_BotonCirculoFocusGained
-    displayHerramienta.setText("Circulo");
-     lienzo.setHerramientaSeleccionada(Herramientas.Circulo);
+        displayHerramienta.setText("Circulo");
+        lienzo.setHerramientaSeleccionada(Herramientas.Circulo);
     }//GEN-LAST:event_BotonCirculoFocusGained
 
     private void BotonCuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCuadradoActionPerformed
         displayHerramienta.setText("Cuadrado");
-         lienzo.setHerramientaSeleccionada(Herramientas.Cuadrado);
+        lienzo.setHerramientaSeleccionada(Herramientas.Cuadrado);
     }//GEN-LAST:event_BotonCuadradoActionPerformed
 
     private void MenuItemNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemNuevoActionPerformed
@@ -323,11 +283,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_MenuItemNuevoActionPerformed
 
     private void CheckBoxRellenoStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_CheckBoxRellenoStateChanged
-       
     }//GEN-LAST:event_CheckBoxRellenoStateChanged
 
     private void CheckBoxRellenoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckBoxRellenoActionPerformed
-        
     }//GEN-LAST:event_CheckBoxRellenoActionPerformed
 
     private void CheckBoxRellenoItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_CheckBoxRellenoItemStateChanged
@@ -360,7 +318,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private void BotonBlancoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonBlancoActionPerformed
         lienzo.setColor(Color.WHITE);
     }//GEN-LAST:event_BotonBlancoActionPerformed
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBoxMenuItem BarraEstadoCheckbox;
