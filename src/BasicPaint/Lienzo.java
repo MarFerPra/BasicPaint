@@ -38,62 +38,55 @@ public class Lienzo extends javax.swing.JPanel {
     public Herramientas getHerramientaSeleccionada() {
         return herramientaSeleccionada;
     }
-    
-    public void setHerramientaSeleccionada(Herramientas herr){
+
+    public void setHerramientaSeleccionada(Herramientas herr) {
         herramientaSeleccionada = herr;
     }
-    
+
     public Lienzo() {
         initComponents();
     }
-    
-    
-    public void paint(Graphics g){
+
+
+    public void paint(Graphics g) {
         super.paint(g);
         g.setColor(color);
-        if(herramientaSeleccionada==Herramientas.Lapiz){
-        g.fillOval(punto.x,punto.y,7,7);
+        if(herramientaSeleccionada==Herramientas.Lapiz) {
+            g.fillOval(punto.x,punto.y,7,7);
         }
-        
-        if(herramientaSeleccionada == Herramientas.Linea){
+        if(herramientaSeleccionada == Herramientas.Linea) {
             g.drawLine(punto_pressed.x, punto_pressed.y, punto.x, punto.y);
         }
-        
-        if(herramientaSeleccionada == Herramientas.Circulo){
-           int x=0,y=0,ancho=0,alto=0; 
-           x = Math.min(punto_pressed.x, punto.x); 
-           y = Math.min(punto_pressed.y, punto.y); 
-           ancho = Math.abs(punto_pressed.y-punto.y); 
-           alto = Math.abs(punto_pressed.x-punto.x);
-           
-           if(!relleno)
-               g.drawOval(x, y, alto, ancho);
-           else
-               g.fillOval(x, y, alto, ancho);
+        if(herramientaSeleccionada == Herramientas.Circulo) {
+            int x=0,y=0,ancho=0,alto=0;
+            x = Math.min(punto_pressed.x, punto.x);
+            y = Math.min(punto_pressed.y, punto.y);
+            ancho = Math.abs(punto_pressed.y-punto.y);
+            alto = Math.abs(punto_pressed.x-punto.x);
+            if(!relleno)
+                g.drawOval(x, y, alto, ancho);
+            else
+                g.fillOval(x, y, alto, ancho);
         }
-        
-        if(herramientaSeleccionada == Herramientas.Cuadrado){
-            
-           int x=0,y=0,ancho=0,alto=0; 
-           x = Math.min(punto_pressed.x, punto.x); 
-           y = Math.min(punto_pressed.y, punto.y); 
-           ancho = Math.abs(punto_pressed.y-punto.y); 
-           alto = Math.abs(punto_pressed.x-punto.x);
-           
-           if(!relleno)
-               g.drawRect(x, y, alto, ancho);
-           else
-               g.fillRect(x, y, alto, ancho);
+        if(herramientaSeleccionada == Herramientas.Cuadrado) {
+            int x=0,y=0,ancho=0,alto=0;
+            x = Math.min(punto_pressed.x, punto.x);
+            y = Math.min(punto_pressed.y, punto.y);
+            ancho = Math.abs(punto_pressed.y-punto.y);
+            alto = Math.abs(punto_pressed.x-punto.x);
+            if(!relleno)
+                g.drawRect(x, y, alto, ancho);
+            else
+                g.fillRect(x, y, alto, ancho);
         }
     }
-    
+
     Point punto, punto_pressed;
     int forma;
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
         addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 formMouseDragged(evt);
@@ -110,7 +103,6 @@ public class Lienzo extends javax.swing.JPanel {
                 formMouseClicked(evt);
             }
         });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -124,8 +116,8 @@ public class Lienzo extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
-      punto = evt.getPoint();
-      this.repaint();
+        punto = evt.getPoint();
+        this.repaint();
     }//GEN-LAST:event_formMouseClicked
 
     private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
@@ -143,7 +135,7 @@ public class Lienzo extends javax.swing.JPanel {
         this.punto_pressed = null;
         this.repaint();
     }//GEN-LAST:event_formMouseReleased
-    public void Reset(){
+    public void Reset() {
         this.punto = null;
         this.repaint();
     }
